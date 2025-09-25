@@ -1,33 +1,59 @@
-# 🎵 Moosek Music Bot
+# 🎵 Moosek Music Bot - Official Source Code
 
-A professional Discord music bot built with Discord.js v14 and Euralink V4, featuring advanced music capabilities, slash commands, and a scalable architecture.
+[![Discord](https://img.shields.io/discord/1234567890123456789?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/moosek)
+[![GitHub stars](https://img.shields.io/github/stars/ryxu-xo/moosek-music-bot?style=social)](https://github.com/ryxu-xo/moosek-music-bot)
+[![NPM](https://img.shields.io/npm/v/ryxu-xo-euralink?color=red&logo=npm)](https://www.npmjs.com/package/ryxu-xo-euralink)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## ✨ Features
+> **⚠️ OFFICIAL SOURCE CODE** - This is the official, production-ready source code for Moosek Music Bot. Built by [ryxu-xo](https://github.com/ryxu-xo), the creator of Euralink V4.
 
-- **🎵 Advanced Music System**: Powered by Euralink V4 with support for YouTube, Spotify, SoundCloud, and more
-- **⚡ Slash Commands**: Modern Discord slash command interface
-- **🔄 Smart Node Switching**: Automatic failover and load balancing
-- **💾 Persistence**: Auto-resume music after bot restarts
-- **🎚️ Advanced Filters**: Built-in audio filters and effects
-- **📊 Real-time Metrics**: Performance monitoring and statistics
-- **🗄️ Database Ready**: SQLite database with playlist and user preference support
-- **📝 Professional Logging**: Structured logging with Winston and Chalk
-- **🛡️ Error Handling**: Comprehensive error handling and recovery
-- **🔧 Extensible**: Easy to add new commands and features
+A professional, high-performance Discord music bot built with Discord.js v14 and Euralink V4. Features advanced music capabilities, slash commands, smart node switching, voice resilience, and a scalable architecture designed for production use.
 
-## 🚀 Quick Start
+## 🌟 **Why Choose Moosek?**
+
+- **🚀 Built by the Euralink Creator** - Developed by ryxu-xo, the creator of the Euralink V4 library
+- **⚡ High Performance** - HTTP/2 support, connection pooling, and smart caching
+- **🛡️ Production Ready** - Comprehensive error handling, logging, and monitoring
+- **🎵 Advanced Features** - SponsorBlock, audio filters, lyrics, and more
+- **🔧 Fully Customizable** - Clean, modular codebase that's easy to extend
+- **📊 Real-time Metrics** - Built-in performance monitoring and health checks
+
+## ✨ **Features**
+
+### 🎵 **Music System**
+- **Multi-Platform Support**: YouTube, Spotify, SoundCloud, and more
+- **Smart Source Detection**: Automatically chooses the best source for your query
+- **Advanced Queue Management**: Pagination, smart shuffle, and history tracking
+- **Audio Processing**: Built-in filters, EQ, and effects
+- **Voice Resilience**: Auto-recovery from disconnections and stuck tracks
+
+### 🎛️ **Advanced Capabilities**
+- **SponsorBlock Integration**: Automatic ad and sponsor segment skipping
+- **Lyrics Support**: Real-time lyrics display with synced timing
+- **Chapter Support**: Automatic chapter detection and navigation
+- **Persistence**: Auto-resume music after bot restarts
+- **Smart Node Switching**: Automatic failover between Lavalink nodes
+
+### 🛠️ **Developer Features**
+- **Slash Commands**: Modern Discord slash command interface
+- **Modular Architecture**: Easy to add new commands and features
+- **Database Ready**: SQLite with comprehensive schema for playlists and settings
+- **Professional Logging**: Winston with structured logging and colored output
+- **TypeScript Support**: Full TypeScript definitions available
+
+## 🚀 **Quick Start**
 
 ### Prerequisites
 
-- Node.js 16.0.0 or higher
-- A Discord bot token
-- A Lavalink server (or use the provided public node)
+- **Node.js** 16.0.0 or higher
+- **Discord Bot Token** from [Discord Developer Portal](https://discord.com/developers/applications)
+- **Lavalink Server** (or use the provided public node)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ryxu-xo/moosek.git
    cd moosek-music-bot
    ```
 
@@ -45,7 +71,7 @@ A professional Discord music bot built with Discord.js v14 and Euralink V4, feat
    ```env
    DISCORD_TOKEN=your_bot_token_here
    CLIENT_ID=your_client_id_here
-   GUILD_ID=your_guild_id_here
+   GUILD_ID=your_guild_id_here  # Optional for faster command registration
    ```
 
 4. **Start the bot**
@@ -58,13 +84,14 @@ A professional Discord music bot built with Discord.js v14 and Euralink V4, feat
    npm run dev
    ```
 
-## 📁 Project Structure
+## 📁 **Project Structure**
 
 ```
 moosek-music-bot/
 ├── src/
 │   ├── commands/           # Slash commands
-│   │   └── music/         # Music-related commands
+│   │   ├── music/         # Music-related commands
+│   │   └── general/       # General commands
 │   ├── events/            # Discord events
 │   ├── handlers/          # Command and event handlers
 │   ├── music/             # Music system (Euralink integration)
@@ -79,44 +106,63 @@ moosek-music-bot/
 └── README.md             # This file
 ```
 
-## 🎮 Commands
+## 🎮 **Commands**
 
-### Music Commands
+### 🎵 **Music Commands**
 
-- `/play <query>` - Play music from various sources
-- `/pause` - Pause the current track
-- `/resume` - Resume the paused track
-- `/skip [amount]` - Skip current track(s)
-- `/stop` - Stop music and clear queue
-- `/queue [page]` - Display the music queue
+| Command | Description | Usage |
+|---------|-------------|-------|
+| `/play` | Play music from various sources | `/play <query> [source]` |
+| `/pause` | Pause the current track | `/pause` |
+| `/resume` | Resume the paused track | `/resume` |
+| `/skip` | Skip current track(s) | `/skip [amount]` |
+| `/stop` | Stop music and clear queue | `/stop` |
+| `/queue` | Display the music queue | `/queue [page]` |
+| `/volume` | Adjust volume (0-1000) | `/volume <level>` |
+| `/seek` | Seek to position in track | `/seek <position>` |
+| `/loop` | Set loop mode | `/loop <none/track/queue>` |
+| `/shuffle` | Shuffle the queue | `/shuffle [type]` |
+| `/lyrics` | Get lyrics for current track | `/lyrics` |
 
-### Additional Features
+### 🔧 **General Commands**
 
-- **Smart Source Detection**: Automatically detects the best source for your query
-- **Queue Management**: Advanced queue with pagination and controls
-- **Audio Filters**: Built-in audio effects and filters
-- **Playlist Support**: Save and load custom playlists
-- **Statistics**: Track music statistics and bot performance
+| Command | Description | Usage |
+|---------|-------------|-------|
+| `/help` | Show all available commands | `/help` |
 
-## ⚙️ Configuration
+## ⚙️ **Configuration**
 
 The bot uses a comprehensive configuration system in `src/config/config.js`. Key settings include:
 
-- **Discord Settings**: Bot token, client ID, intents
-- **Lavalink Settings**: Node configuration and options
-- **Music Settings**: Default volume, filters, resilience options
-- **Database Settings**: SQLite configuration
-- **Logging Settings**: Log levels and file rotation
+### **Discord Settings**
+- Bot token and client ID
+- Intents and partials configuration
+- Guild-specific settings
 
-## 🛠️ Development
+### **Lavalink Settings**
+- Node configuration and connection options
+- Smart switching and failover settings
+- Performance optimization options
 
-### Adding New Commands
+### **Music Settings**
+- Default volume and audio settings
+- Voice resilience configuration
+- SponsorBlock and filter settings
+
+### **Database Settings**
+- SQLite configuration
+- Table schemas and relationships
+- Data persistence options
+
+## 🛠️ **Development**
+
+### **Adding New Commands**
 
 1. Create a new file in `src/commands/[category]/`
 2. Export an object with `data` and `execute` properties
 3. The command will be automatically loaded
 
-Example:
+**Example:**
 ```javascript
 const { SlashCommandBuilder } = require('discord.js');
 
@@ -131,32 +177,44 @@ module.exports = {
 };
 ```
 
-### Adding New Events
+### **Adding New Events**
 
 1. Create a new file in `src/events/`
 2. Export an object with `name` and `execute` properties
 3. The event will be automatically loaded
 
-### Database Operations
+### **Database Operations**
 
 The bot includes a comprehensive database system for:
-- Guild settings
-- User preferences
-- Playlists
-- Music statistics
-- Bot statistics
+- **Guild Settings**: Prefix, music channels, DJ roles
+- **User Preferences**: Volume, shuffle, lyrics display
+- **Playlists**: Custom playlists with track management
+- **Music Statistics**: Play tracking and analytics
+- **Bot Statistics**: Performance and usage metrics
 
-## 📊 Monitoring
+## 📊 **Monitoring & Analytics**
 
-The bot includes built-in monitoring and metrics:
+### **Built-in Monitoring**
 - Real-time performance metrics
 - Music statistics tracking
 - Error logging and reporting
 - Health checks for Lavalink nodes
 
-## 🔧 Troubleshooting
+### **Logging System**
+- **Winston Logger**: Structured logging with multiple levels
+- **Chalk Integration**: Colored console output
+- **File Rotation**: Automatic log file management
+- **Error Tracking**: Comprehensive error reporting
 
-### Common Issues
+### **Metrics Available**
+- Node health and performance
+- Player statistics and usage
+- Memory and CPU usage
+- Network latency and throughput
+
+## 🔧 **Troubleshooting**
+
+### **Common Issues**
 
 1. **Bot not responding to commands**
    - Check if slash commands are registered
@@ -173,37 +231,65 @@ The bot includes built-in monitoring and metrics:
    - Verify SQLite permissions
    - Check database file integrity
 
-### Logs
+### **Logs**
 
 Logs are stored in the `logs/` directory:
 - `combined.log` - All log levels
 - `error.log` - Error logs only
 
-## 🤝 Contributing
+## 🤝 **Contributing**
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+We welcome contributions! Here's how you can help:
 
-## 📄 License
+1. **Fork the repository**
+2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
+3. **Commit your changes**: `git commit -m 'Add amazing feature'`
+4. **Push to the branch**: `git push origin feature/amazing-feature`
+5. **Open a Pull Request**
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### **Development Guidelines**
+- Follow the existing code style
+- Add JSDoc comments for new functions
+- Test your changes thoroughly
+- Update documentation as needed
 
-## 🙏 Acknowledgments
+## 📄 **License**
 
-- [Discord.js](https://discord.js.org/) - Discord API wrapper
-- [Euralink V4](https://github.com/ryxu-xo/euralink) - Lavalink wrapper
-- [Lavalink](https://github.com/Frederikam/Lavalink) - Audio node system
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+## 🙏 **Acknowledgments**
 
-For support, questions, or feature requests:
-- Open an issue on GitHub
-- Join our Discord server
-- Check the documentation
+- **[Discord.js](https://discord.js.org/)** - Discord API wrapper
+- **[Euralink V4](https://github.com/ryxu-xo/euralink)** - Lavalink wrapper by ryxu-xo
+- **[Lavalink](https://github.com/Frederikam/Lavalink)** - Audio node system
+- **[ryxu-xo](https://github.com/ryxu-xo)** - Creator and maintainer
+
+## 📞 **Support & Community**
+
+### **Get Help**
+- **GitHub Issues**: [Report bugs or request features](https://github.com/ryxu-xo/moosek-music-bot/issues)
+- **Discord Server**: [Join our community](https://discord.gg/moosek)
+- **Documentation**: [Comprehensive guides](https://docs.moosek.music)
+
+### **Stay Updated**
+- **GitHub**: Watch for releases and updates
+- **Discord**: Get notified of new features
+- **Top.gg**: Vote and review the bot
+
+## 🌟 **Star History**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ryxu-xo/moosek-music-bot&type=Date)](https://star-history.com/#ryxu-xo/moosek-music-bot&Date)
 
 ---
 
-**Made with ❤️ by ryxu-xo**
+<div align="center">
+
+**Made with ❤️ by [ryxu-xo](https://github.com/ryxu-xo)**
+
+*The official source code for Moosek Music Bot*
+
+[![GitHub](https://img.shields.io/badge/GitHub-ryxu--xo-black?logo=github)](https://github.com/ryxu-xo)
+[![Discord](https://img.shields.io/badge/Discord-Moosek-5865F2?logo=discord)](https://discord.gg/moosek)
+[![Top.gg](https://img.shields.io/badge/Top.gg-Moosek-7289DA?logo=discord)](https://top.gg/bot/moosek)
+
+</div>
