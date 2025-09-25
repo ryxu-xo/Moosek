@@ -1,7 +1,7 @@
 # 🎵 Moosek - Official Source Code
 
 [![Discord](https://img.shields.io/discord/1234567890123456789?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/moosek)
-[![GitHub stars](https://img.shields.io/github/stars/ryxu-xo/moosek?style=social)](https://github.com/ryxu-xo/moosek-music-bot)
+[![GitHub stars](https://img.shields.io/github/stars/ryxu-xo/moosek?style=social)](https://github.com/ryxu-xo/moosek)
 [![NPM](https://img.shields.io/npm/v/ryxu-xo-euralink?color=red&logo=npm)](https://www.npmjs.com/package/ryxu-xo-euralink)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -54,7 +54,7 @@ A professional, high-performance Discord music bot built with Discord.js v14 and
 1. **Clone the repository**
    ```bash
    git clone https://github.com/ryxu-xo/moosek.git
-   cd moosek-music-bot
+   cd moosek
    ```
 
 2. **Install dependencies**
@@ -87,7 +87,7 @@ A professional, high-performance Discord music bot built with Discord.js v14 and
 ## 📁 **Project Structure**
 
 ```
-moosek-music-bot/
+moosek/
 ├── src/
 │   ├── commands/           # Slash commands
 │   │   ├── music/         # Music-related commands
@@ -354,7 +354,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 **Support & Community**
 
 ### **Get Help**
-- **GitHub Issues**: [Report bugs or request features](https://github.com/ryxu-xo/moosek-music-bot/issues)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/ryxu-xo/moosek/issues)
 - **Discord Server**: [Join our community](https://discord.gg/moosek)
 - **Documentation**: [Comprehensive guides](https://docs.moosek.music)
 
@@ -365,7 +365,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌟 **Star History**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ryxu-xo/moosek-music-bot&type=Date)](https://star-history.com/#ryxu-xo/moosek-music-bot&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ryxu-xo/moosek&type=Date)](https://star-history.com/#ryxu-xo/moosek&Date)
 
 ---
 
@@ -380,3 +380,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Top.gg](https://img.shields.io/badge/Top.gg-Moosek-7289DA?logo=discord)](https://top.gg/bot/moosek)
 
 </div>
+
