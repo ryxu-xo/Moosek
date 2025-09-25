@@ -1,13 +1,19 @@
-<div style="float: right;">
-  <img src="https://media.discordapp.net/attachments/1420312667612254212/1420805402043482222/Gemini_Generated_Image_d44eyd44eyd44eyd.png?ex=68d6bba5&is=68d56a25&hm=7eb047abb46ba34717d2d4d9beafa460db767143f842b9d24ca7ec6a78526a26&=&format=webp&quality=lossless&width=971&height=971" width="200">
-</div>
-
-# 🎵 Moosek - Official Source Code
-
-[![Discord](https://img.shields.io/discord/1234567890123456789?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/moosek)
-[![GitHub stars](https://img.shields.io/github/stars/ryxu-xo/moosek?style=social)](https://github.com/ryxu-xo/moosek-music-bot)
-[![NPM](https://img.shields.io/npm/v/ryxu-xo-euralink?color=red&logo=npm)](https://www.npmjs.com/package/ryxu-xo-euralink)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+<h1 align="left">
+  🎵 Moosek - Official Source Code 
+  <a href="https://discord.gg/moosek">
+    <img src="https://img.shields.io/discord/1234567890123456789?color=5865F2&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://github.com/ryxu-xo/moosek-music-bot">
+    <img src="https://img.shields.io/github/stars/ryxu-xo/moosek?style=social" />
+  </a>
+  <a href="https://www.npmjs.com/package/ryxu-xo-euralink">
+    <img src="https://img.shields.io/npm/v/ryxu-xo-euralink?color=red&logo=npm" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-green.svg" />
+  </a>
+  <img src="https://media.discordapp.net/attachments/1420312667612254212/1420805402043482222/Gemini_Generated_Image_d44eyd44eyd44eyd.png?ex=68d6bba5&is=68d56a25&hm=7eb047abb46ba34717d2d4d9beafa460db767143f842b9d24ca7ec6a78526a26&=&format=webp&quality=lossless&width=971&height=971" align="right" width="80" />
+</h1>
 
 > **⚠️ OFFICIAL SOURCE CODE** - This is the official, production-ready source code for Moosek Music Bot. Built by [ryxu-xo](https://github.com/ryxu-xo), the creator of Euralink V4.
 
@@ -298,6 +304,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 </div>
+
 
 
 
