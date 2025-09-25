@@ -1,0 +1,50 @@
+{
+  "name": "moosek-music-bot",
+  "version": "1.0.0",
+  "description": "Official source code for Moosek Music Bot - Advanced Discord music bot with Euralink V4 integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "music",
+    "lavalink",
+    "euralink",
+    "moosek",
+    "official",
+    "source-code",
+    "ryxu-xo"
+  ],
+  "author": "ryxu-xo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryxu-xo/moosek.git"
+  },
+  "homepage": "https://github.com/ryxu-xo/moosek#readme",
+  "bugs": {
+    "url": "https://github.com/ryxu-xo/moosek/issues"
+  },
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "chalk": "^4.1.2",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "ryxu-xo-euralink": "^0.4.0-re",
+    "sqlite3": "^5.1.6",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
