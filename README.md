@@ -1,19 +1,9 @@
-<h1 align="left">
-  🎵 Moosek - Official Source Code 
-  <a href="https://discord.gg/moosek">
-    <img src="https://img.shields.io/discord/1234567890123456789?color=5865F2&logo=discord&logoColor=white" />
-  </a>
-  <a href="https://github.com/ryxu-xo/moosek-music-bot">
-    <img src="https://img.shields.io/github/stars/ryxu-xo/moosek?style=social" />
-  </a>
-  <a href="https://www.npmjs.com/package/ryxu-xo-euralink">
-    <img src="https://img.shields.io/npm/v/ryxu-xo-euralink?color=red&logo=npm" />
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-green.svg" />
-  </a>
-  <img src="https://media.discordapp.net/attachments/1420312667612254212/1420805402043482222/Gemini_Generated_Image_d44eyd44eyd44eyd.png?ex=68d6bba5&is=68d56a25&hm=7eb047abb46ba34717d2d4d9beafa460db767143f842b9d24ca7ec6a78526a26&=&format=webp&quality=lossless&width=971&height=971" align="right" width="200" />
-</h1>
+# 🎵 Moosek Music Bot - Official Source Code
+
+[![Discord](https://img.shields.io/discord/1234567890123456789?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/moosek)
+[![GitHub stars](https://img.shields.io/github/stars/ryxu-xo/moosek-music-bot?style=social)](https://github.com/ryxu-xo/moosek-music-bot)
+[![NPM](https://img.shields.io/npm/v/ryxu-xo-euralink?color=red&logo=npm)](https://www.npmjs.com/package/ryxu-xo-euralink)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 > **⚠️ OFFICIAL SOURCE CODE** - This is the official, production-ready source code for Moosek Music Bot. Built by [ryxu-xo](https://github.com/ryxu-xo), the creator of Euralink V4.
 
@@ -120,25 +110,63 @@ moosek-music-bot/
 
 ### 🎵 **Music Commands**
 
-| Command | Description | Usage |
-|---------|-------------|-------|
-| `/play` | Play music from various sources | `/play <query> [source]` |
-| `/pause` | Pause the current track | `/pause` |
-| `/resume` | Resume the paused track | `/resume` |
-| `/skip` | Skip current track(s) | `/skip [amount]` |
-| `/stop` | Stop music and clear queue | `/stop` |
-| `/queue` | Display the music queue | `/queue [page]` |
-| `/volume` | Adjust volume (0-1000) | `/volume <level>` |
-| `/seek` | Seek to position in track | `/seek <position>` |
-| `/loop` | Set loop mode | `/loop <none/track/queue>` |
-| `/shuffle` | Shuffle the queue | `/shuffle [type]` |
-| `/lyrics` | Get lyrics for current track | `/lyrics` |
+| Command | Description | Usage | Permission |
+|---------|-------------|-------|------------|
+| `/play` | Play music from various sources | `/play <query> [source]` | Everyone |
+| `/pause` | Pause the current track | `/pause` | DJ Role |
+| `/resume` | Resume the paused track | `/resume` | DJ Role |
+| `/skip` | Skip current track(s) | `/skip [amount]` | DJ Role |
+| `/stop` | Stop music and clear queue | `/stop` | DJ Role |
+| `/queue` | Display the music queue | `/queue [page]` | Everyone |
+| `/volume` | Adjust volume (0-1000) | `/volume <level>` | DJ Role |
+| `/seek` | Seek to position in track | `/seek <position>` | DJ Role |
+| `/loop` | Set loop mode | `/loop <none/track/queue>` | DJ Role |
+| `/shuffle` | Shuffle the queue | `/shuffle [type]` | DJ Role |
+| `/lyrics` | Get lyrics for current track | `/lyrics` | Everyone |
+| `/nowplaying` | Show current track info | `/nowplaying` | Everyone |
+| `/clear` | Clear the music queue | `/clear` | DJ Role |
+| `/remove` | Remove a track from queue | `/remove <position>` | DJ Role |
+| `/move` | Move a track in queue | `/move <from> <to>` | DJ Role |
 
 ### 🔧 **General Commands**
 
-| Command | Description | Usage |
-|---------|-------------|-------|
-| `/help` | Show all available commands | `/help` |
+| Command | Description | Usage | Permission |
+|---------|-------------|-------|------------|
+| `/help` | Show all available commands | `/help` | Everyone |
+| `/ping` | Check bot latency | `/ping` | Everyone |
+| `/invite` | Get bot invite link | `/invite` | Everyone |
+| `/support` | Get support server link | `/support` | Everyone |
+| `/stats` | Show bot statistics | `/stats` | Everyone |
+
+### 🎛️ **DJ Commands**
+
+| Command | Description | Usage | Permission |
+|---------|-------------|-------|------------|
+| `/dj set` | Set DJ role for this server | `/dj set <role>` | Administrator |
+| `/dj remove` | Remove DJ role | `/dj remove` | Administrator |
+| `/dj list` | List current DJ settings | `/dj list` | Everyone |
+| `/dj add` | Add user to DJ role | `/dj add <user>` | Administrator |
+| `/dj remove` | Remove user from DJ role | `/dj remove <user>` | Administrator |
+
+### ⚙️ **Utility Commands**
+
+| Command | Description | Usage | Permission |
+|---------|-------------|-------|------------|
+| `/serverinfo` | Show server information | `/serverinfo` | Everyone |
+| `/userinfo` | Show user information | `/userinfo [user]` | Everyone |
+| `/avatar` | Get user avatar | `/avatar [user]` | Everyone |
+| `/uptime` | Show bot uptime | `/uptime` | Everyone |
+| `/version` | Show bot version info | `/version` | Everyone |
+
+### 👑 **Admin Commands**
+
+| Command | Description | Usage | Permission |
+|---------|-------------|-------|------------|
+| `/admin prefix` | Set custom prefix | `/admin prefix <prefix>` | Administrator |
+| `/admin channel` | Set music channel | `/admin channel <channel>` | Administrator |
+| `/admin settings` | View server settings | `/admin settings` | Administrator |
+| `/admin reset` | Reset server settings | `/admin reset` | Administrator |
+| `/admin blacklist` | Manage blacklisted users | `/admin blacklist <add/remove> <user>` | Administrator |
 
 ## ⚙️ **Configuration**
 
@@ -302,10 +330,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Discord](https://img.shields.io/badge/Discord-Moosek-5865F2?logo=discord)](https://discord.gg/moosek)
 [![Top.gg](https://img.shields.io/badge/Top.gg-Moosek-7289DA?logo=discord)](https://top.gg/bot/moosek)
 
-
 </div>
-
-
-
-
-
