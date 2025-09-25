@@ -1,7 +1,7 @@
-# 🎵 Moosek Music Bot - Official Source Code
+# 🎵 Moosek - Official Source Code
 
 [![Discord](https://img.shields.io/discord/1234567890123456789?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/moosek)
-[![GitHub stars](https://img.shields.io/github/stars/ryxu-xo/moosek-music-bot?style=social)](https://github.com/ryxu-xo/moosek-music-bot)
+[![GitHub stars](https://img.shields.io/github/stars/ryxu-xo/moosek?style=social)](https://github.com/ryxu-xo/moosek-music-bot)
 [![NPM](https://img.shields.io/npm/v/ryxu-xo-euralink?color=red&logo=npm)](https://www.npmjs.com/package/ryxu-xo-euralink)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -331,3 +331,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Top.gg](https://img.shields.io/badge/Top.gg-Moosek-7289DA?logo=discord)](https://top.gg/bot/moosek)
 
 </div>
+
