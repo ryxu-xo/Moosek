@@ -162,11 +162,8 @@ moosek-music-bot/
 
 | Command | Description | Usage | Permission |
 |---------|-------------|-------|------------|
-| `/admin prefix` | Set custom prefix | `/admin prefix <prefix>` | Administrator |
-| `/admin channel` | Set music channel | `/admin channel <channel>` | Administrator |
 | `/admin settings` | View server settings | `/admin settings` | Administrator |
 | `/admin reset` | Reset server settings | `/admin reset` | Administrator |
-| `/admin blacklist` | Manage blacklisted users | `/admin blacklist <add/remove> <user>` | Administrator |
 
 ## ⚙️ **Configuration**
 
@@ -331,4 +328,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Top.gg](https://img.shields.io/badge/Top.gg-Moosek-7289DA?logo=discord)](https://top.gg/bot/moosek)
 
 </div>
-
