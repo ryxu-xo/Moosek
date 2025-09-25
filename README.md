@@ -12,7 +12,7 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-green.svg" />
   </a>
-  <img src="https://media.discordapp.net/attachments/1420312667612254212/1420805402043482222/Gemini_Generated_Image_d44eyd44eyd44eyd.png?ex=68d6bba5&is=68d56a25&hm=7eb047abb46ba34717d2d4d9beafa460db767143f842b9d24ca7ec6a78526a26&=&format=webp&quality=lossless&width=971&height=971" align="right" width="80" />
+  <img src="https://media.discordapp.net/attachments/1420312667612254212/1420805402043482222/Gemini_Generated_Image_d44eyd44eyd44eyd.png?ex=68d6bba5&is=68d56a25&hm=7eb047abb46ba34717d2d4d9beafa460db767143f842b9d24ca7ec6a78526a26&=&format=webp&quality=lossless&width=971&height=971" align="right" width="200" />
 </h1>
 
 > **⚠️ OFFICIAL SOURCE CODE** - This is the official, production-ready source code for Moosek Music Bot. Built by [ryxu-xo](https://github.com/ryxu-xo), the creator of Euralink V4.
@@ -304,6 +304,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 </div>
+
 
 
 
