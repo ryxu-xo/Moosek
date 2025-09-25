@@ -108,16 +108,18 @@ moosek-music-bot/
 
 ## 🎮 **Commands**
 
-### 🎵 **Music Commands**
+<details>
+<summary><h3>🎵 Music Commands <i>(Click to expand)</i></h3></summary>
 
 | Command | Description | Usage | Permission |
 |---------|-------------|-------|------------|
 | `/play` | Play music from various sources | `/play <query> [source]` | Everyone |
+| `/search` | Advanced music search with filters | `/search <query> [platform] [type] [limit]` | Everyone |
 | `/pause` | Pause the current track | `/pause` | DJ Role |
 | `/resume` | Resume the paused track | `/resume` | DJ Role |
 | `/skip` | Skip current track(s) | `/skip [amount]` | DJ Role |
 | `/stop` | Stop music and clear queue | `/stop` | DJ Role |
-| `/queue` | Display the music queue | `/queue [page]` | Everyone |
+| `/queue` | Display the music queue with advanced controls | `/queue [page] [filter] [sort]` | Everyone |
 | `/volume` | Adjust volume (0-1000) | `/volume <level>` | DJ Role |
 | `/seek` | Seek to position in track | `/seek <position>` | DJ Role |
 | `/loop` | Set loop mode | `/loop <none/track/queue>` | DJ Role |
@@ -128,42 +130,92 @@ moosek-music-bot/
 | `/remove` | Remove a track from queue | `/remove <position>` | DJ Role |
 | `/move` | Move a track in queue | `/move <from> <to>` | DJ Role |
 
-### 🔧 **General Commands**
+**Features:**
+- 🎵 **Multi-platform support** (YouTube, Spotify, SoundCloud, etc.)
+- 🔍 **Advanced search** with platform filters and result limits
+- 📋 **Interactive queue** with pagination, filtering, and sorting
+- 🎛️ **Professional controls** for DJs and music enthusiasts
+- 🎧 **Audio processing** with volume, seek, and loop controls
+
+</details>
+
+<details>
+<summary><h3>🔧 General Commands <i>(Click to expand)</i></h3></summary>
 
 | Command | Description | Usage | Permission |
 |---------|-------------|-------|------------|
-| `/help` | Show all available commands | `/help` | Everyone |
-| `/ping` | Check bot latency | `/ping` | Everyone |
-| `/invite` | Get bot invite link | `/invite` | Everyone |
+| `/help` | Show all available commands with interactive dropdown | `/help` | Everyone |
+| `/ping` | Check bot latency and response time | `/ping` | Everyone |
+| `/invite` | Get bot invite link with additional buttons | `/invite` | Everyone |
 | `/support` | Get support server link | `/support` | Everyone |
-| `/stats` | Show bot statistics | `/stats` | Everyone |
+| `/stats` | Show comprehensive bot statistics | `/stats` | Everyone |
 
-### 🎛️ **DJ Commands**
+**Features:**
+- 📊 **Real-time statistics** and performance metrics
+- 🔗 **Quick access links** to invite, support, and GitHub
+- 📈 **Bot health monitoring** with uptime and memory usage
+- 🎯 **Interactive help system** with categorized commands
+
+</details>
+
+<details>
+<summary><h3>🎛️ DJ Commands <i>(Click to expand)</i></h3></summary>
 
 | Command | Description | Usage | Permission |
 |---------|-------------|-------|------------|
 | `/dj set` | Set DJ role for this server | `/dj set <role>` | Administrator |
-| `/dj remove` | Remove DJ role | `/dj remove` | Administrator |
+| `/dj remove` | Remove DJ role configuration | `/dj remove` | Administrator |
 | `/dj list` | List current DJ settings | `/dj list` | Everyone |
-| `/dj add` | Add user to DJ role | `/dj add <user>` | Administrator |
-| `/dj remove` | Remove user from DJ role | `/dj remove <user>` | Administrator |
 
-### ⚙️ **Utility Commands**
+**Features:**
+- 🎧 **Role-based permissions** for music control
+- ⚙️ **Server-specific configuration** for DJ roles
+- 👥 **Flexible user management** for DJ privileges
+- 🔒 **Secure permission system** with administrator-only access
 
-| Command | Description | Usage | Permission |
-|---------|-------------|-------|------------|
-| `/serverinfo` | Show server information | `/serverinfo` | Everyone |
-| `/userinfo` | Show user information | `/userinfo [user]` | Everyone |
-| `/avatar` | Get user avatar | `/avatar [user]` | Everyone |
-| `/uptime` | Show bot uptime | `/uptime` | Everyone |
-| `/version` | Show bot version info | `/version` | Everyone |
+</details>
 
-### 👑 **Admin Commands**
+<details>
+<summary><h3>⚙️ Utility Commands <i>(Click to expand)</i></h3></summary>
 
 | Command | Description | Usage | Permission |
 |---------|-------------|-------|------------|
-| `/admin settings` | View server settings | `/admin settings` | Administrator |
-| `/admin reset` | Reset server settings | `/admin reset` | Administrator |
+| `/serverinfo` | Show comprehensive server information | `/serverinfo` | Everyone |
+| `/userinfo` | Show detailed user information | `/userinfo [user]` | Everyone |
+| `/avatar` | Get user avatar with download options | `/avatar [user]` | Everyone |
+| `/uptime` | Show bot uptime and performance stats | `/uptime` | Everyone |
+| `/version` | Show bot version and system information | `/version` | Everyone |
+
+**Features:**
+- 📊 **Detailed server analytics** with member counts and channels
+- 👤 **User profile information** with join dates and roles
+- 🖼️ **Avatar management** with multiple format options
+- ⏱️ **Performance monitoring** with uptime and system stats
+
+</details>
+
+<details>
+<summary><h3>👑 Admin Commands <i>(Click to expand)</i></h3></summary>
+
+| Command | Description | Usage | Permission |
+|---------|-------------|-------|------------|
+| `/admin settings` | View server-specific settings | `/admin settings` | Administrator |
+| `/admin reset` | Reset server settings to default | `/admin reset` | Administrator |
+| `/eval` | Execute JavaScript code (Developer only) | `/eval <code> [async] [silent]` | Bot Owner |
+
+**Features:**
+- ⚙️ **Server configuration management** with detailed settings
+- 🔄 **Settings reset functionality** for troubleshooting
+- 🔧 **Developer tools** with full bot context access
+- 🛡️ **Owner-only security** for sensitive operations
+
+**Developer Features:**
+- 🚀 **Full bot context** access in eval command
+- ⚡ **Async/await support** for complex operations
+- 🔇 **Silent execution** for background operations
+- 📊 **Execution time monitoring** and error handling
+
+</details>
 
 ## ⚙️ **Configuration**
 
